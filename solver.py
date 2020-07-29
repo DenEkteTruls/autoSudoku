@@ -134,6 +134,8 @@ def posibilityCheck(sectionId, routePosition) -> list:
     #X check if it is a posibility
     #X if so, append it to a list
 
+pprint(board)
+    
 ticks = 0
 solved = False
 

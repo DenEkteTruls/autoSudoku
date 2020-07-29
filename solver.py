@@ -125,7 +125,7 @@ def posibilityCheck(sectionId, routePosition) -> list:
         if i not in theArray:
             posibilities.append(i)
 
-    #print("SECTION: {}, ROUTE: {}, hs: {}, hv: {}, vs: {}, vv: {}, POSIBILITIES: {}".format(sectionId, routePosition, horizontalSections, horizontalValuesOfSections, verticalSections, verticalValuesOfSections, posibilities))
+    print("SECTION: {}, ROUTE: {}, hs: {}, hv: {}, vs: {}, vv: {}, POSIBILITIES: {}".format(sectionId, routePosition, horizontalSections, horizontalValuesOfSections, verticalSections, verticalValuesOfSections, posibilities))
 
     return posibilities
 
@@ -133,8 +133,6 @@ def posibilityCheck(sectionId, routePosition) -> list:
     #X getHorizontalValues and getVerticalValues of both sections
     #X check if it is a posibility
     #X if so, append it to a list
-
-pprint(board)
 
 ticks = 0
 solved = False
@@ -187,5 +185,5 @@ while not solved:
         pprint(board)
         #time.sleep(0.2)
 
-print()
+print("\n")
 pprint(board)
